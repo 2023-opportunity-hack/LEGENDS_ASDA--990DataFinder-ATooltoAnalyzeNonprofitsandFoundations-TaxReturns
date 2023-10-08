@@ -1,31 +1,17 @@
+# Legends ASDA Documentatoin
+Welcome to a prototype search engine for 990 tax forms
 
-# 2023_fall Hackathon
-https://hack.ohack.dev
-## Team
-LEGENDS_ASDA
+![Example of Website](Example1.png "Title")
 
-## Slack Channel
-`#`[Legends_ASDA](https://opportunity-hack.slack.com/app_redirect?channel=Legends_ASDA)
+## Getting Started
+It's a website so everything can run locally in your browser! All that's required is to clone the repository and run `flask run` to get updated tax data
 
-## Problem Statement
-[990 Data Finder: A Tool to Analyze Nonprofits and Foundations’ Tax Returns](https://ohack.dev/project/xsnjfdchdZNjGThFjJPh)
+### Dependencies
+- Python2 to grab tax forms once a year
+- python flask library
+- python json library
 
-## Creator
-@Aryan Khanna (on Slack)
-
-## Your next steps
-1. ✅ Add everyone to your GitHub repo like this: https://opportunity-hack.slack.com/archives/C1Q6YHXQU/p1605657678139600
-2. ✅ Create your DevPost project like this https://youtu.be/vCa7QFFthfU?si=bzMQ91d8j3ZkOD03
-3. ✅ ASU Students use https://opportunity-hack-2023-asu.devpost.com/
-4. ✅ Everyone else use https://opportunity-hack-2023-virtual.devpost.com/
-5. ✅ Your DevPost final submission demo video should be 3 minutes or less
-6. ✅ Review the judging criteria on DevPost
-
-# What should your final Readme look like?
-Examples of stellar readmes:
-- ✨ [2019 Team 3](https://github.com/2019-Arizona-Opportunity-Hack/Team-3)
-- ✨ [2019 Team 6](https://github.com/2019-Arizona-Opportunity-Hack/Team-6)
-- ✨ [2020 Team 2](https://github.com/2020-opportunity-hack/Team-02)
-- ✨ [2020 Team 4](https://github.com/2020-opportunity-hack/Team-04)
-- ✨ [2020 Team 8](https://github.com/2020-opportunity-hack/Team-08)
-- ✨ [2020 Team 12](https://github.com/2020-opportunity-hack/Team-12)
+### Supported Features
+- US City/State filtering 
+- Gross revenue 
+- Net revenue

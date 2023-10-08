@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search Bar</title>
+    <link rel="stylesheet" href="static/styles.css" />
+  </head>
+  <body>
+    <!-- ... other code ... -->
+
+    <form id="search-form">
+      <h1>990 Tax Form Search Engine</h1>
+      <input type="text" name="city_name" placeholder="Enter City" />
+      <input
+        type="text"
+        name="state_name"
+        placeholder="Enter State abbreviation (eg. AZ)"
+      />
+      <input
+        type="text"
+        name="AGR_name"
+        placeholder="Enter range for Annual Gross Revenue as <number,number> (leave blank if no filter)"
+      />
+      <input
+        type="text"
+        name="ANR_name"
+        placeholder="Enter range for Annual Net Revenue as <number,number> (leave blank if no filter)"
+      />
+      <input type="button" value="Search" id="submit-btn" />
+    </form>
+
+    <div id="server-response"></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#submit-btn").click(function () {
+          var formData = $("#search-form").serialize();
+          $.post("/handle_search", formData, function (response) {
+            $("#server-response").html(response);
+          });
+        });
+      });
+    </script>
+  </body>
+</html>
